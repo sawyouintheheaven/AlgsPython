@@ -16,6 +16,7 @@ class WeightedQuickUnion():
         while (root != self.__parent[root]):
             root = self.__parent[root]
         #merge the component containing site
+        #***question:the loop ?
         while (p != root):
             newp = self.__parent[p]
             self.__parent[p] = root
